@@ -1,0 +1,226 @@
+== Change log ==
+
+Version 3.1.3 - 05/03/2019
+---------------------------------
+- Fix: fixed title display in blog page
+
+Version 3.1.2 - 04/16/2019
+---------------------------------
+- Fix: some minor fixes
+- Tweak: now waboot styles are loaded with a priority of 7, followed by the component merge style file with a priority of 8
+
+Version 3.1.1 - 01/09/2019
+---------------------------------
+- Fix: some minor fixes
+
+Version 3.1.0 - 01/04/2019
+---------------------------------
+- Fix: fixed archives hierarchy partials inclusion
+- Fix: fixed an error when no fonts are selected
+- Fix: fixed font awesome files inclusion for fontawesome 5.6
+- Fix: now Waboot does not throws fatal errors when WBF is not found
+- Tweak: templates/author.php merged with templates/archive.php
+- Tweak: removed old javascript frontend code
+- Tweak: it is now possible to disable waboot styles via theme options
+- Tweak: removed fastclick and touchswipe reference in package.json
+- Tweak: code cleaned up a bit
+- Tweak: some basic gutemberg support added
+- Tweak: now Waboot will looking for author templates in templates/archive instead of templates/author
+- Tweak: the default loop for archives is no longer included in the templates/archive.php itself, but in a separate templates/archive/archive.php template
+- Tweak: wrapper-start and wrapper-end revamped
+- Tweak: action waboot/site-main/before renamed to waboot/main-content/before
+- Tweak: action waboot/site-main/after renamed to waboot/main-content/after
+- Tweak: action waboot/main/before renamed to waboot/content/before
+- Tweak: action waboot/main/after renamed to waboot/content/after
+- Tweak: removed edit link from all pages
+- Tweak: added components images
+- Tweak: better handling of widgets rendering in zones
+- Tweak: removed styles, fonts and font awesome theme options from core (moved to components)
+- Feature: added google fonts api key theme option
+
+Version 3.0.1 - 06/28/2018
+---------------------------------
+- Fix: Fixed Fontawesome includes
+- Fix: content_nav_above and content_nav_below options are now named correctly
+- Tweak: removed favicon and apple-touch-icon custom logic (now native)
+
+Version 3.0.0 - 06/26/2018
+---------------------------------
+- Fix: Many fixes
+- Tweak: Removed Bootstrap as core dependency
+- Tweak: Removed most of WooCommerce overridden templates
+- Feature: Added components repository (all components has been removed from the Waboot repository)
+
+Version 2.3.3 - 06/18/2018
+---------------------------------
+- Fix: Added webfonts directory for fontawesome 5
+- Tweak: Added the possibility to choose to not display the title prefix in archive page titles
+
+Version 2.3.2 - 03/30/2018
+---------------------------------
+- Tweak: Update FontAwesome
+- Feature: Added an option to select which FontAwesome version to include
+- Feature: Added an theme-options\components auto-backup feature when updating the theme
+
+Version 2.3.1 - 03/12/2018
+---------------------------------
+- Fix: get_archive_page_title() fixed
+- Fix: WooCommerce theme support fixed
+- Fix: 'content-width' behavior for shop page fixed
+- Tweak: Updated author template
+- Tweak: Now 'templates/archive.php' automatically detect 'templates/author/$author-nicename' and 'templates/author/$author-ID'
+- Tweak: Now recent posts widget uses col-xs-* for mobile
+- Tweak: WooCommerce templates updated
+
+Version 2.3.0 - 12/04/2017
+---------------------------------
+- Fix: Now title in shop page behave as expected accordingly to the theme options.
+- Fix: Now title in product pages behave as expected accordingly to the theme options and behaviors.
+- Fix: Now sidebar classes behave as expected accordingly to the theme options.
+- Fix: Generators works with child-side components.
+- Fix: WooCommerce templates upgraded.
+- Tweak: Compatibility with WBF 1.1.0.
+- Feature: Added WBF auto-installer.
+- Feature: Support for the new WBF Update Channels module.
+- Features: Now some components compiles their styles in an unified .css file.
+
+Version 2.2.1 -
+---------------------------------
+- Fix: Now title in shop page behave as expected accordingly to the theme options.
+- Fix: Now title in product pages behave as expected accordingly to the theme options and behaviors.
+- Fix: Now sidebar classes behave as expected accordingly to the theme options.
+- Fix: Generators works with child-side components.
+- Tweak: Compatibility with WBF 1.1.0.
+- Feature: Added WBF auto-installer.
+- Feature: Support for the new WBF Update Channels module.
+
+Version 2.2.0 - 10/26/2017
+---------------------------------
+- Tweak: Removed "WordPress" directory
+
+Version 2.1.5 - 09/25/2017
+---------------------------------
+- Tweak: Better WooCommerce 3 compatibility
+- Tweak: Better support for custom WooCommerce loops, thanks to waboot-loop.php template.
+
+Version 2.1.4 - 08/31/2017
+---------------------------------
+- Tweak: Better archives template detection
+- Tweak: New screenshots and default theme option logo
+- Tweak: Added 'waboot/layout/post_navigation/display_numeric_pagination' filter.
+- Tweak: Now show_pagination is TRUE by default
+
+Version 2.1.3 - 07/27/2017
+---------------------------------
+- Fix: Now "Archives" theme options display taxonomies instead of post types
+- Fix: Fixed the incorrect style slug in stylesheets.php
+- Tweak: Improved display_title() logic
+
+Version 2.1.2 - 07/19/2017
+---------------------------------
+- Fix: Restored layout.php
+- Fix: Now all background options are compiled into theme-options.css
+- Fix: Now Wizard admin notice behave correctly
+- Fix: Now show_content_nav_below \ below works correctly in posts page.
+- Tweak: a link to reset wizard status can now be found under WBF Status
+
+Version 2.1.1 - 07/18/2017
+---------------------------------
+- Tweak: Generators are now run via Ajax
+- Tweak: Wizard page completed
+- Tweak: New behavior to specify the post navigation position in every single post
+- Docs: Generators documentation
+
+Version 2.1.0 - 07/03/2017
+---------------------------------
+- Fix: Now the fallback callback for menus is really a callback
+- Fix: "blog_masonry_column_width" option now works correctly
+- Fix: Various fixes to post_navigation
+- Fix: Fixed favicon deployment
+- Fix: The awful notice that appeared when the user saved the components should be gone
+- Fix: Misc fixes
+- Tweak: Breadcrumb settings: now homepage and "posts page" are split when homepage is not the posts page
+- Tweak: Better page title detection in entry.php
+- Feature: filters "waboot/get_header" and "waboot/get_footer" ti allows the override of headers and footers parts via code
+- Feature: Introduced shortcode to display the breadcrumb (wb_breadcrumb)
+- Feature: Introduced Waboot Generators (beta)
+
+Version 2.0.12 - 03/13/2017
+---------------------------------
+- Fix: Refined child theme template
+
+Version 2.0.11 - 02/09/2017
+---------------------------------
+- Fix: Now 'woocommerce_cat_items' is not applied in single only
+
+Version 2.0.10 - 01/13/2017
+---------------------------------
+- Fix: Fixed compatibiliy between select2 and fastclick
+
+Version 2.0.9 - 01/09/2017
+---------------------------------
+- Fix: removed data-fieldgroup from components page
+- Fix: favicon option now works properly
+- Tweak: moved around some theme options
+- Tweak: favicon option now works with S3 plugin
+
+Version 2.0.8 - 12/27/2016
+---------------------------------
+- Fix: fixes to Theme Options and Components CSS
+
+Version 2.0.7 - 12/22/2016
+---------------------------------
+- Fix: container and container fluid CSS layout
+- Fix: blog posgt wrapper moved outside the while
+- Fix: fixed headerFixed.css
+- Tweak: license now refactored for new Theme_Updater
+- Tweak: masonry options moved to blog
+
+Version 2.0.6 - 12/05/2016
+---------------------------------
+- Fix: Now WooCommerce Standard components options work correctly
+- Tweak: Added page-wrapper to templates
+- Tweak: Added "page-before" and "page-after" zones
+
+Version 2.0.5 - 12/01/2016
+---------------------------------
+- Fix: Misc fixes to components
+- Tweak: Improved Waboot fault resistance in WBF absence
+- Tweak: Child theme refactored
+
+---------------------------------
+---------------------------------
+---------------------------------
+
+Version 2.0.4 - 11/04/2016
+---------------------------------
+- Feature: added the ability to enqueue inline styles
+- Feature: is now possible to use custom functions into _theme-options.src
+- Tweak: now components enqueues inline style
+- Tweak: the theme options style file has been completed
+- Fix: components layout and options has been adjusted
+
+Version 2.0.3 - 10/25/2016
+---------------------------------
+
+- Feature: added post forma templates
+- Tweak: refactor styles priority
+- Fix: header splitted components errors
+
+Version 2.0.2 - 10/20/2016
+---------------------------------
+
+- Fix: now the entry title is displayed correctly on archives
+- Fix: now multiple widgets area are displayed correctly
+
+Version 2.0.1 - 10/13/2016
+---------------------------------
+
+- Fix: Header Splitted component has been fixed
+- Fix: Navbar classic assets now load correctly
+- Tweak: Archive page template now support taxonomy- templates
+
+Version 2.0.0 - 10/10/2016
+---------------------------------
+
+- Initial

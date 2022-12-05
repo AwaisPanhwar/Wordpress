@@ -1,0 +1,14 @@
+.error-404 {
+  text-align: center;
+  .title404 {
+    font-size: 5em;
+    opacity: 0.5;
+  }
+  .search-form {
+    label,
+    input.search-field {
+      width: 80%;
+      margin: 15px auto;
+    }
+  }
+}

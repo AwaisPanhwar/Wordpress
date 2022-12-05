@@ -1,0 +1,40 @@
+.single {
+  article {
+    .entry__image img {
+      min-width: 100%;
+      margin-bottom: 20px;
+    }
+    .entry__footer {
+      text-transform: uppercase;
+      font-size: 0.9em;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      padding: 10px 0;
+      .glyphicon {
+        margin-right: 5px;
+      }
+      > span {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+
+.blog-classic {
+  article {
+    .entry__wrapper {
+      @include up($medium){
+        display: flex;
+        flex-wrap: nowrap;
+        .entry__image {
+          flex: 1 1 auto;
+          margin-right: 20px
+        }
+        .entry__content {
+          flex: 1 1 auto;
+        }
+      }
+    }
+  }
+}
